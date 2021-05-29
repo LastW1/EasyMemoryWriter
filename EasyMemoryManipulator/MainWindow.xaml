@@ -1,0 +1,35 @@
+﻿<Window x:Class="EasyMemoryManipulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasyMemoryManipulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480.907" Width="800">
+    <Grid>
+        <Button Name="LoadToMemoryB" Content="Load To Memory" HorizontalAlignment="Left" Margin="222,375,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click" Height="43"/>
+        <Button Name="OpenProcessB" Content="Try To Open Process" HorizontalAlignment="Left" Margin="237,45,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click_1"/>
+        
+        <TextBox Name="ProcessTB" HorizontalAlignment="Left" Height="23" Margin="421,42,0,0" TextWrapping="Wrap" Text="Process Name or ID" VerticalAlignment="Top" Width="120"/>
+        
+        <Label Content="Type :" HorizontalAlignment="Left" Margin="101,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.616,-0.464"/>
+        
+        <CheckBox Name="CBByte" Content="Byte" HorizontalAlignment="Left" Margin="156,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CB2Bytes" Content="2Bytes" HorizontalAlignment="Left" Margin="222,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CBBytes" Content="Bytes" HorizontalAlignment="Left" Margin="297,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CBFloat" Content="Float" HorizontalAlignment="Left" Margin="361,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CBInt" Content="Int" HorizontalAlignment="Left" Margin="421,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CBString" Content="String" HorizontalAlignment="Left" Margin="472,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CBDouble" Content="Double" HorizontalAlignment="Left" Margin="540,111,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="CBLong" Content="Long" HorizontalAlignment="Left" Margin="613,111,0,0" VerticalAlignment="Top"/>
+        
+        <TextBox Name="MemoryAddresTB" HorizontalAlignment="Left" Height="23" Margin="252,161,0,0" TextWrapping="Wrap" Text="Memory Adress" VerticalAlignment="Top" Width="334"/>
+        <TextBox Name="Offset1TB" HorizontalAlignment="Left" Height="23" Margin="337,203,0,0" TextWrapping="Wrap" Text="Offset 1" VerticalAlignment="Top" Width="155"/>
+        <TextBox Name="Offset2TB" HorizontalAlignment="Left" Height="23" Margin="337,243,0,0" TextWrapping="Wrap" Text="Offset 2" VerticalAlignment="Top" Width="155"/>
+        <TextBox Name="Offset3TB" HorizontalAlignment="Left" Height="23" Margin="337,284,0,0" TextWrapping="Wrap" Text="Offset 3" VerticalAlignment="Top" Width="155"/>
+        <TextBox Name="Offset4TB" HorizontalAlignment="Left" Height="23" Margin="337,328,0,0" TextWrapping="Wrap" Text="Offset 4" VerticalAlignment="Top" Width="155"/>
+        
+        <TextBox Name="ValueTB" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Value To Load" VerticalAlignment="Top" Width="151" Margin="372,388,0,0"/>
+
+    </Grid>
+</Window>
